@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 10px 0;
+    font-family: sans-serif;
+}
+
+.main {
+    margin: 20px;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.part {
+    border: 1px solid black;
+    height: 100%;
+    padding: 20px;
+}
+
+form .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+}
+
+.row .col select {
+    height: 30px;
+    width: 90%;
+    border: 0px;
+    background-color: rgb(234, 238, 238);
+}
+
+#zip {
+    height: 28px;
+    border: 1px black solid;
+}
+
+button {
+    background-color: orange;
+    border: 0;
+    height: 30px;
+    width: 100px;
+    margin: 10px 20px 0 0;
+    color: white;
+}
+
+.right .row {
+    background-color: rgb(180, 184, 184);
+    padding: 0 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.right .row .right {
+    text-align: end;
+}

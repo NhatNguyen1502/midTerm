@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./form.css">
+    <link rel="icon" type="image/png" href="../img/logo-removebg-preview.png">
+    
+    <title>Form_Survey</title>
+</head>
+
+<body>
+    <div class="main">
+        <h3>What would you like to do next?</h3>
+        <p>Choose if you have a discount code or reward points you want to use or would like to estimate your delivery
+            cost.</p>
+        <div class="form">
+            <div class="part left">
+                <form action="#">
+                    <label for="coupon">
+                        <input type="checkbox" id="coupon" name="coupon">
+                        Use Coupon Code
+                    </label> <br>
+                    <label for="gift">
+                        <input type="checkbox" id="gift" name="gift">
+                        Use Gift Voucher
+                    </label><br>
+                    <label for="taxe">
+                        <input type="checkbox" id="taxe" name="taxe">
+                        Estimate Shipping & Taxes
+                    </label><br>
+                    <div class="row">
+                        <div class="col">
+                            <label for="country">Country:</label> <br>
+                            <select name="country" id="country">
+                                <option value="United States">United States</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for="region">Region / State:</label> <br>
+                            <select name="region" id="region">
+                                <option value="United States">United States</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for="zip">
+                                Zip code: <br>
+                                <input type="text" name="zip" id="zip">
+                            </label>
+                        </div>
+                    </div>
+                    <button>Get Quotes</button>
+                    <button>Continue</button>
+                </form>
+            </div>
+            <div class="part right">
+                <div class="row">
+                    <span class="left">Cart Sub Total</span>
+                    <span class="right">$59</span>
+                </div>
+                <div class="row">
+                    <span class="left">Cart Sub Total</span>
+                    <span class="right">$59</span>
+                </div>
+                <div class="row">
+                    <span class="left">Cart Sub Total</span>
+                    <span class="right">$59</span>
+                </div>
+                <div class="row">
+                    <span class="left">Cart Sub Total</span>
+                    <span class="right">$59</span>
+                </div>
+                <button>Update</button>
+                <button>Check Out</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

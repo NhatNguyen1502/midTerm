@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Shoppee</title>
+    <link rel="stylesheet" href="../transform/transform.css">
+    <link rel="stylesheet" href="./styleLogin.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../img/logo-removebg-preview.png">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar1">
+            <div class="nav1_item nav1_logo">
+                <img loading="lazy" src="../img/logo-removebg-preview.png" alt="logo">
+                <h2>E-Shoppee</h2>
+            </div>
+            <input id="menu1" name="open_close_menu" type="radio">
+            <label for="menu1" class="opacity"></label>
+            <input id="menu" name="open_close_menu" type="radio">
+            <label for="menu" id="iconmenu" class="fas fa-bars"></label>
+            <div class="nav1_item nav1_list">
+                <label for="menu1" id="iconclose" class="fas fa-times"></label>
+                <ul class="list_ul list_ul2">
+                    <li class="list_li">
+                        <i class="fas fa-user"></i>
+                        <p>Account</p>
+                    </li>
+                    <li class="list_li">
+                        <i class="fa fa-star"></i>
+                        <p>Wishlist</p>
+                    </li>
+                    <li class="list_li">
+                        <i class="fas fa-user"></i>
+                        <p>Checkout</p>
+                    </li>
+                    <li class="list_li">
+                        <i class="fas fa-shopping-cart"></i>
+                        <p>Cart</p>
+                    </li>
+                    <li class="list_li">
+                        
+                            <!-- <i class="fa fa-sign-in-alt"></i> login -->
+                            <!-- Button to open the modal login form -->
+                            <button class="btn__login" onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+                            <!-- The Modal -->
+                            <div id="id01" class="modal">
+                                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                    title="Close Modal">&times;</span>
+
+                                <!-- Modal Content -->
+                                <form class="modal-content animate" action="/action_page.php">
+                                    <div class="imgcontainer">
+                                        <img src="../img/avateUser.jpg" alt="Avatar" class="avatar">
+                                    </div>
+
+                                    <div class="container">
+                                        <label for="uname"><b>Username</b></label>
+                                        <input type="text" placeholder="Enter Username" name="uname" required>
+
+                                        <label for="psw"><b>Password</b></label>
+                                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                        <button class="btn__login" type="submit">Login</button>
+                                        <label>
+                                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                                        </label>
+                                    </div>
+
+                                    <div class="container container--forgot">
+                                        <button class="btn__login" type="button"
+                                            onclick="document.getElementById('id01').style.display='none'"
+                                            class="cancelbtn">Cancel</button>
+                                        <div class="psw">Forgot <a href="#">password?</a></div>
+                                    </div>
+                                </form>
+                            </div>
+
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="navbar2">
+            <ul class="nav2_item nav2_list">
+                <li class="nav2_list_item">Home</li>
+                <li class="nav2_list_item">Shop</li>
+                <li class="nav2_list_item">Blog</li>
+                <li class="nav2_list_item">inbox</li>
+                <li class="nav2_list_item">Contract</li>
+            </ul>
+            <div class="nav2_item nav2_input">
+                <input type="text" placeholder="Search" class="input">
+                <button class="btn__search">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <div class="main" transition-style="in:circle:hesitate">
+        <div class="body_item body_item1">
+            <div class="item1_first item1_first_paragrap">
+                <h2>E-Shoppee</h2>
+                <h3>100% Reponsive Design</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet similique iure laboriosam totam
+                    modi, debitis atque. Sit et voluptatum ab molestiae libero debitis sint, praesentium eius beatae
+                    earum neque accusantium voluptatem cupiditate maxime quas iste, temporibus qui, eaque cum assumenda.
+                </p>
+                <button>Get it now</button>
+            </div>
+            <div class="item1_first item1_first_img" transition-style="in:wipe:right">
+                <div class="box"></div>
+                <img loading="lazy" src="../img/person-ordering-food-or-drink-at-a-counter.svg" alt="picture">
+            </div>
+
+
+        </div>
+        <div class="body_item body_item2">
+            <div class="body_item2_div body_item2_div1">
+                <h3>CATEGORY</h3>
+                <h3>FEATURES ITEMS</h3>
+            </div>
+            <div class="body_item2_div body_item2_div2">
+
+
+                <div class="table_colum">
+                    <img loading="lazy" src="../img/1-15-removebg-preview.png" alt="clothes">
+                    <h3>$56</h3>
+                    <p>Easy Polo Green Edition</p>
+                    <a href="../cart/cart.html" class="btn">
+                        <i class="fas fa-shopping-cart"></i>Add to cart
+                    </a>
+                </div>
+
+                <div class="table_colum">
+                    <img loading="lazy" src="../img/1-15-removebg-preview.png" alt="clothes">
+                    <h3>$56</h3>
+                    <p>Easy Polo Green Edition</p>
+                    <a href="../cart/cart.html" class="btn">
+                        <i class="fas fa-shopping-cart"></i>Add to cart
+                    </a>
+                </div>
+
+                <div class="table_colum">
+                    <img loading="lazy" src="../img/1-15-removebg-preview.png" alt="clothes">
+                    <h3>$56</h3>
+                    <p>Easy Polo Green Edition</p>
+                    <a href="../cart/cart.html" class="btn">
+                        <i class="fas fa-shopping-cart"></i>Add to cart
+                    </a>
+                </div>
+
+                <div class="table_colum">
+                    <img loading="lazy" src="../img/1-15-removebg-preview.png" alt="clothes">
+                    <h3>$56</h3>
+                    <p>Easy Polo Green Edition</p>
+                    <a href="../cart/cart.html" class="btn">
+                        <i class="fas fa-shopping-cart"></i>Add to cart
+                    </a>
+                </div>
+
+                <div class="table_colum">
+                    <img loading="lazy" src="../img/1-15-removebg-preview.png" alt="clothes">
+                    <h3>$56</h3>
+                    <p>Easy Polo Green Edition</p>
+                    <a href="../cart/cart.html" class="btn">
+                        <i class="fas fa-shopping-cart"></i>Add to cart
+                    </a>
+                </div>
+                <div class="table_colum">
+                    <img loading="lazy" src="../img/1-15-removebg-preview.png" alt="clothes">
+                    <h3>$56</h3>
+                    <p>Easy Polo Green Edition</p>
+                    <a href="../cart/cart.html" class="btn">
+                        <i class="fas fa-shopping-cart"></i>Add to cart
+                    </a>
+                </div>
+
+                <div class="table_colum">
+                    <img loading="lazy" src="../img/1-15-removebg-preview.png" alt="clothes">
+                    <h3>$56</h3>
+                    <p>Easy Polo Green Edition</p>
+                    <a href="../cart/cart.html" class="btn">
+                        <i class="fas fa-shopping-cart"></i>Add to cart
+                    </a>
+                </div>
+                <div class="table_colum">
+                    <img loading="lazy" src="../img/1-15-removebg-preview.png" alt="clothes">
+                    <h3>$56</h3>
+                    <p>Easy Polo Green Edition</p>
+                    <a href="../cart/cart.html" class="btn">
+                        <i class="fas fa-shopping-cart"></i>Add to cart
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>
